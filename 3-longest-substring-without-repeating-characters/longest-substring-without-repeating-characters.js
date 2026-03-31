@@ -4,17 +4,18 @@
  */
 var lengthOfLongestSubstring = function(s) {
     let l = 0;
-    let r = 0;
     let max = 1;
     let counter = {};
-    counter[s[0]] = 1;
 
     if(!s){
         return 0;
     }
     
-    while(r < s.length - 1 ){
-        r += 1;
+    
+    
+
+    for(let r = 0; r < s.length; r++){
+        
         if (counter[s[r]]){
             counter[s[r]] += 1;
         }else{
